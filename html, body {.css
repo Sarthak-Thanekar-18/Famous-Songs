@@ -1,0 +1,105 @@
+html, body {
+    height: 100%; /* Ensure the body takes the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    background-color: #36454F; /* Deep Purple Background */
+    color: #FFFFF0; /* Ivory Text */
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 2em;
+    text-shadow: 0 0 5px #00E6FF, 0 0 10px #00E6FF; /* Neon Glow */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #FFFFF0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #FF007F; /* Hot Pink for hover effects */
+}
+
+main {
+    flex: 1; /* Allow the main content to grow and fill available space */
+    padding: 20px; /* Add some padding */
+}
+
+.now-playing {
+    margin-bottom: 20px;
+}
+
+.song-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.song-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s;
+    box-shadow: 0 0 15px rgba(0, 230, 255, 0.5);
+}
+
+.song-card:hover {
+    transform: scale(1.05);
+}
+
+.album-cover {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+audio {
+    width: 100%; /* Make the audio player full width */
+    margin-top: 10px; /* Add some space above the audio player */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+.load-more {
+    background: #00FF7F;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFF0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.load-more:hover {
+    background: #00E6FF;
+}
